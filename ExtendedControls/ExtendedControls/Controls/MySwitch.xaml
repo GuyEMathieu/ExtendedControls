@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:control="clr-namespace:ExtendedControls.Controls"
+    x:Class="ExtendedControls.Controls.MySwitch">
+    
+  <ContentView.Content>
+      <StackLayout>
+            <RelativeLayout>
+                <Label
+                    Text="This is my label"
+                    x:Name="_label"
+                    VerticalTextAlignment="End"
+                    
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Width, Factor=0.76}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor=1}"
+                />
+
+                <control:ImageEx
+                    x:Name="_image"
+                    AspectEx="AspectFill"
+                    Source="switchOff"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Width, Factor=0.2}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor=0.8}"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Width, Factor=0.78}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                    Property=Height, Factor=0.1}"
+                />
+                    
+
+            </RelativeLayout>
+      </StackLayout>
+  </ContentView.Content>
+</ContentView>
